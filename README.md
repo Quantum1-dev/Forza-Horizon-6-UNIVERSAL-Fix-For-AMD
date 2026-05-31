@@ -1,0 +1,1 @@
+# Forza-Horizon-6-UNIVERSAL-Fix-For-AMD
