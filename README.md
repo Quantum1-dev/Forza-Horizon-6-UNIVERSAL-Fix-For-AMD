@@ -43,14 +43,3 @@ If you have used older versions of hardware fixes or encounter sudden engine all
 5. Re-paste the refined fix files into your game directory and restart the game.
 
 ---
-
-## 🛠️ Compilation (For Developers)
-
-If you want to build the binaries from source yourself using **Dev-C++ (TDM-GCC)** or any standalone GCC environment:
-
-```bash
-# Compile custom d3d12 proxy layout
-g++ -shared -O2 -o d3d12.dll d3d12.cpp d3d12.def -luser32 -lkernel32
-
-# Compile custom dxgi proxy layout
-g++ -shared -O2 -o dxgi.dll dxgi.cpp dxgi.def -luser32 -lkernel32
