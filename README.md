@@ -42,4 +42,6 @@ If you have used older versions of hardware fixes or encounter sudden engine all
 4. Locate and delete the file named `ForteTemp.scratch` (if present).
 5. Re-paste the refined fix files into your game directory and restart the game.
 
+
+Special Thanks to MegaDroidGames.
 ---
