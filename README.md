@@ -43,7 +43,7 @@ If you have used older versions of hardware fixes or encounter sudden engine all
 5. Re-paste the refined fix files into your game directory and restart the game.
 
 /*
- * Original DirectX Proxy Logic & Architecture by Megadroidgames / juniordIsael
+ * Original DirectX Proxy Logic & Architecture by Megadroidgames / JuniorD-Isael
  * Modified by Quantum1-dev: Removed iGPU VRAM spoofing for dedicated GPU stability
 */
 ---
