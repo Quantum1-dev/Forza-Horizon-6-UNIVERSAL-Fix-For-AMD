@@ -42,10 +42,8 @@ If you have used older versions of hardware fixes or encounter sudden engine all
 4. Locate and delete the file named `ForteTemp.scratch` (if present).
 5. Re-paste the refined fix files into your game directory and restart the game.
 
-
 /*
- * Original DirectX Proxy Logic by Megadroidgames / JuniordIsael
- * Modified by Quantum1-dev
-
- */
+ * Original DirectX Proxy Logic & Architecture by Megadroidgames / juniordIsael
+ * Modified by Quantum1-dev: Removed iGPU VRAM spoofing for dedicated GPU stability
+*/
 ---
