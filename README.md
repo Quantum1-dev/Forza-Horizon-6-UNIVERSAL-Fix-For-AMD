@@ -56,3 +56,5 @@ This project builds upon existing open-source proxy mechanics. Full credit for t
 
 * **Modifications by Quantum1-dev:** 
   * *Contribution:* Removed the forced 4GB/8GB iGPU VRAM spoofing present in the original source. This modified version safely passes your actual GPU memory directly to the engine, maximizing stability and preventing crashes specifically for users with Dedicated GPUs.
+
+[Source Code](https://github.com/Megadroidgames/Forza-Horizon-6-RX-580-FH201-FH205-Fix)  
