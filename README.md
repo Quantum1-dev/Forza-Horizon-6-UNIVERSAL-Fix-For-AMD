@@ -43,5 +43,9 @@ If you have used older versions of hardware fixes or encounter sudden engine all
 5. Re-paste the refined fix files into your game directory and restart the game.
 
 
-Special Thanks to MegaDroidGames.
+/*
+ * Original DirectX Proxy Logic by Megadroidgames / JuniordIsael
+ * Modified by Quantum1-dev
+
+ */
 ---
