@@ -42,8 +42,12 @@ If you have used older versions of hardware fixes or encounter sudden engine all
 4. Locate and delete the file named `ForteTemp.scratch` (if present).
 5. Re-paste the refined fix files into your game directory and restart the game.
 
-/*
- * Original DirectX Proxy Logic & Architecture by Megadroidgames / JuniorD-Isael
- * Modified by Quantum1-dev: Removed iGPU VRAM spoofing for dedicated GPU stability
-*/
+## Sources & Credits
+
+This project builds upon existing open-source proxy mechanics. Full credit for the foundation of this tool belongs to the original authors:
+
+* **Original Proxy Source Code:** [Megadroidgames / JuniorD-Isael] 
+  * *Contribution:* Core DXGI/D3D12 architecture, VTable hooking structures, and the DirectX 12.1 / Mesh Shader bypass logic.
+
+* **Modifications by Quantum1-dev:** * *Contribution:* Removed the forced 4GB/8GB iGPU VRAM spoofing present in the original source. This modified version safely passes your actual GPU memory directly to the engine, maximizing stability and preventing crashes specifically for users with Dedicated GPUs.
 ---
