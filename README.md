@@ -1,7 +1,7 @@
 # Forza Horizon 6 - Legacy Hardware & FHE01 Fix Wrapper 🏎️💨
 
-[![GitHub Release]([https://img.shields.io/github/v/release/Quantum1-dev/Forza-Horizon-6-UNIVERSAL-Fix-For-AMD/releases/tag/v1.2)](https://github.com/Quantum1-dev/Forza-Horizon-6-UNIVERSAL-Fix-For-AMD/releases/tag/v1.2)
-[![Discord](https://img.shields.io/discord/YOUR_DISCORD_SERVER_ID?color=7289da&label=Discord&style=flat-square)](https://discord.gg/arP3DjMQGC)
+[![GitHub Release](https://img.shields.io/github/v/release/Quantum1-dev/Forza-Horizon-6-UNIVERSAL-Fix-For-AMD)](https://github.com/Quantum1-dev/Forza-Horizon-6-UNIVERSAL-Fix-For-AMD/releases/latest)
+[![Discord](https://img.shields.io/badge/Discord-Join%20Us-7289DA?logo=discord&logoColor=white&style=flat-square)](https://discord.gg/arP3DjMQGC)
 
 A refined, high-performance DirectX 12 proxy wrapper designed to bypass compatibility blocks and resolve initialization crashes (**FHE01 Context 190000 / 030000**) in *Forza Horizon 6*. 
 
