@@ -4,48 +4,57 @@
 [![Discord](https://img.shields.io/badge/Discord-Join%20Us-7289DA?logo=discord&logoColor=white&style=flat-square)](https://discord.gg/arP3DjMQGC)
 [![Status](https://img.shields.io/badge/Status-Experimental-red?style=flat-square)](#)
 
-> **⚠️ EXPERIMENTAL STATUS:** This tool is currently in the testing phase and is marked as **experimental**. While it aims to bypass legacy hardware blocks and resolve initialization crashes, it may cause unexpected instability, engine anomalies, or crashes on certain setups. Use at your own risk and please report any issues in our Discord!
+# Forza Horizon 6 — Legacy AMD Hardware Bypass 🏎️💨
+### Optimized for Polaris/GCN Architectures (RX 400/500 Series & Vega iGPUs)
 
-A refined, high-performance DirectX 12 proxy wrapper designed to bypass compatibility blocks and resolve initialization crashes (**FHE01 Context 190000 / 030000**) in *Forza Horizon 6*. 
+This repository contains the system-level `d3d12.dll` engine-handshake proxy module designed to bypass severe API verification deadlocks in *Forza Horizon 6* running on the modern ForzaTech engine. 
 
-Optimized specifically for legacy GPU architectures (such as AMD Polaris RX 400/500 series) to ensure proper Feature Level translation and un-throttled VRAM allocation without triggering internal anti-tamper memory flags.
-
----
-
-## ✨ Features
-
-- **Clean Proxy Design:** Uses native system export forwarding to eliminate aggressive runtime memory patching (`VirtualProtect` hooks), completely preventing anti-tamper security violations.
-- **Optimized Memory Profiling:** Removes artificial 4GB limitations, unlocking a stable **8GB memory profile allocation** to prevent streaming asset choked crashes.
-- **Zero-Footprint Execution:** Mutes active folder text logging routines that trigger dynamic verification scanner blocks on game boot.
-- **DirectX Feature Level Spoofing:** Safely forces the engine handshake to recognize target feature parameters required for initialization.
+By spoofing critical API instructions (Shader Model 6.6+, Enhanced Barriers, Tier 3 Tiled Resources) alongside a highly specific runtime environment, this fix forces the game to communicate cleanly with older AMD architectures instead of freezing on a silent black screen.
 
 ---
 
-## 📥 Installation
+## 🛑 Critical Driver Requirement (Do Not Skip!)
 
-Follow these steps carefully to apply the fix:
+For this proxy fix to execute without causing an instant system-level rendering crash, you must be running a driver that handles advanced Agility SDK functions (like Work Graphs and Enhanced Barriers) on older architectures. 
 
-1. Go to the [Releases](https://github.com/Quantum1-dev/Forza-Horizon-6-UNIVERSAL-Fix-For-AMD/releases/latest) page and download the latest zip archive.
-2. Extract the files to reveal `d3d12.dll` (and `dxgi.dll` if included in your build).
-3. Navigate to your main **Forza Horizon 6** game installation directory (where the main game executable file is located).
-4. Paste the custom `.dll` files directly into that folder.
-5. Launch the game normally.
-
-> ⚠️ **Important Note on Drivers:** It is highly recommended to perform a clean driver wipe using **DDU (Display Driver Uninstaller)** and install updated community-modified graphics drivers before applying this fix. If Windows displays a WHQL digital signature warning during your driver setup, click **"Install Anyway"**.
+### Recommended Driver Paths:
+1. **The Official Preview Route:** `AMD Software: Adrenalin Edition 23.10.01.14 (DirectX 12 Agility SDK Support)`. This specific release natively bridges experimental Work Graphs 1.0 pipelines down to legacy silicon blocks.
+2. **The Community Modded Route (Highly Recommended):** The absolute **latest modded drivers custom-optimized for the RX 500 series** are available directly on the **Quantum Gaming Discord**. These community-modified driver packages contain specialized performance tweaks, improved frame stability, and updated Vulkan/DX12 instruction sets for older architectures.
 
 ---
 
-## ❌ Troubleshooting (Cache Purge Guide)
+## 🛠️ Step-by-Step Installation Guide
 
-If you have used older versions of hardware fixes or encounter sudden engine allocation exceptions, you must clear your local temporary cache:
+### Step 1: Clean Current Drivers
+1. Download **Display Driver Uninstaller (DDU)**.
+2. Boot Windows into **Safe Mode**, run DDU, and select "Clean and Restart" to completely wipe your current graphics driver block.
 
-1. Press **`Win + R`** on your keyboard to open the Run dialog box.
-2. Type `%localappdata%` and press Enter. Locate and completely **delete** the `ForzaHorizon6` folder.
-3. Open the Run dialog box again (**`Win + R`**), type `%temp%`, and press Enter.
-4. Locate and delete the file named `ForteTemp.scratch` (if present).
-5. Re-paste the refined fix files into your game directory and restart the game.
+### Step 2: Install the Driver Setup
+1. Install either the official **23.10.01.14 preview driver** OR grab the specialized **RX 500 series modded drivers** from our Discord.
+2. **Restart your PC** immediately after the installation finishes to solidify the display layer configuration.
+
+### Step 3: Apply the Proxy Files
+1. Download the custom **`d3d12.dll`** and **`dxgi.dll`** file from this fix bundle.
+2. Navigate directly to your root game directory:
+   * **Forza Horizon 6:** Paste it right next to the primary executable (`forzahorizon6.exe`).
+3. Launch the game!
 
 ---
+
+## ⚠️ Critical Troubleshooting & Stability Tweaks
+
+### 1. Game Runs but Crashes After Sometime
+* Keep the **`Shader Qualtiy`** at **Low** or **Medium**.
+* Higher **`Shader Qualtiy`** Cause Crashes.
+
+
+---
+
+## 💬 Community Support & Video Tutorial
+
+🎥 **Step-by-Step Video Guide:** For a full operational breakdown, video benchmarks, and visual confirmation of the fix running live, watch the official tutorial here: [Quantum Gaming - Video Guide](https://youtu.be/NGAN-pKYFa4)
+
+📢 **Get the Latest Modded Drivers:** Head over to the **Quantum Gaming Discord Server** to fetch the newest custom GPU driver packages, share your performance optimization setups, and get direct assistance from fellow hardware creators!
 
 ## 🤝 Sources & Credits
 
